@@ -1,0 +1,44 @@
+node-iferr (1.0.2-3) unstable; urgency=medium
+
+  * Bump debhelper from old 12 to 13.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Wed, 15 Sep 2021 11:38:20 +0100
+
+node-iferr (1.0.2-2) unstable; urgency=medium
+
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.2.1, no changes needed.
+  * Apply multi-arch hints.
+    + node-iferr: Add Multi-Arch: foreign.
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on coffeescript.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Sun, 29 Aug 2021 00:54:29 +0100
+
+node-iferr (1.0.2-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version
+
+ -- Bastien Roucariès <rouca@debian.org>  Wed, 08 Aug 2018 23:14:19 +0200
+
+node-iferr (1.0.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version.
+  * Bump compat and policy (no changes).
+  * Fix CI.
+  * Move to salsa
+  * Bug fix: "autopkgtest failure with new mocha", thanks to Graham Inggs
+    (Closes: #894920).
+
+ -- Bastien Roucariès <rouca@debian.org>  Wed, 16 May 2018 22:18:47 +0200
+
+node-iferr (0.1.5-1) unstable; urgency=low
+
+  * Initial release (Closes: #866787)
+
+ -- saravanan30erd <saravanan30erd@gmail.com>  Sat, 01 Jul 2017 14:02:05 -0400

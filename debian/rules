@@ -1,0 +1,27 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+%:
+	dh $@
+
+#override_dh_auto_build:
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -f test/index.js
+
+%.js: %.coffee
+	coffee -c $<
+
+ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS) $(DEB_BUILD_PROFILES)))
+override_dh_auto_test: test/index.js
+	mocha -R spec
+else
+override_dh_auto_test:
+	@echo '**********************************************************'
+	@echo 'Skip test suite                                           '
+	@echo '**********************************************************'
+endif

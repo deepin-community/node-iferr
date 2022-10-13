@@ -1,0 +1,4 @@
+version=4
+opts="filenamemangle=s%(?:.*?)?v?(\d[\d.]*)\.tar\.gz%iferr-$1.tar.gz%" \
+https://github.com/shesek/iferr/tags \
+(?:.*?/)?v?(\d[\d.]*)\.tar\.gz debian uupdate

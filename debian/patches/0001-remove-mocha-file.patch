@@ -1,0 +1,14 @@
+Subject: remove a file that create problem with new mocha
+author: Bastien Roucariès <rouca@debian.org>
+
+mocha does not like compiler. Remove
+
+Forwarded: not-needed
+
+Index: node-iferr/test/mocha.opts
+===================================================================
+--- node-iferr.orig/test/mocha.opts
++++ /dev/null
+@@ -1,2 +0,0 @@
+---compilers coffee:coffee-script/register
+---reporter spec
