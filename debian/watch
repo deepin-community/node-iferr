@@ -1,4 +1,9 @@
 version=4
-opts="filenamemangle=s%(?:.*?)?v?(\d[\d.]*)\.tar\.gz%iferr-$1.tar.gz%" \
-https://github.com/shesek/iferr/tags \
-(?:.*?/)?v?(\d[\d.]*)\.tar\.gz debian uupdate
+opts=\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-iferr-$1/ \
+ https://github.com/shesek/iferr/tags .*/archive.*/v?([\d\.]+).tar.gz group
+
+opts="searchmode=plain,component=types-iferr,ctype=nodejs,pgpmode=none,filenamemangle=s/^.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-types-iferr-$1/" \
+ https://registry.npmjs.org/@types/iferr https://registry.npmjs.org/@types/iferr/-/iferr-([\d\.]+)@ARCHIVE_EXT@ group

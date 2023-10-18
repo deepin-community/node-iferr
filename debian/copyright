@@ -2,6 +2,7 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: iferr
 Upstream-Contact: https://github.com/shesek/iferr/issues
 Source: https://github.com/shesek/iferr
+ https://registry.npmjs.org/@types/iferr
 
 Files: *
 Copyright: 2014-2018 Nadav Ivgi
@@ -9,6 +10,10 @@ License: Expat
 
 Files: debian/*
 Copyright: 2017 Saravanan Palanisamy (saravanan30erd) <saravanan30erd@gmail.com>
+License: Expat
+
+Files: types-*/*
+Copyright: Microsoft Corporation
 License: Expat
 
 License: Expat
@@ -31,4 +36,3 @@ License: Expat
  ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
-
