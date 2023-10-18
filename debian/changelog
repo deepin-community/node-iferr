@@ -1,3 +1,22 @@
+node-iferr (1.0.2+~1.0.2-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on mocha.
+
+  [ Yadd ]
+  * Add missing build dependency on dh addon.
+  * Declare compliance with policy 4.6.0
+  * Add debian/gbp.conf
+  * Drop dependency to nodejs
+  * Use dh-sequence-nodejs auto test & install
+  * Use GitHub tags instead of npm registry
+  * Embed typescript declarations and repack
+
+ -- Yadd <yadd@debian.org>  Sat, 15 Jan 2022 11:42:41 +0100
+
 node-iferr (1.0.2-3) unstable; urgency=medium
 
   * Bump debhelper from old 12 to 13.
